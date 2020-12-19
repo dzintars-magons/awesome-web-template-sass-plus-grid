@@ -5,8 +5,29 @@
 //    MAIN
 //    =========
 
+.header
+    background-color: #fff
 
+.company-logo
+    width: (747px/11)
+    height: (515px/11)
 
+.section__colors
+    display: grid
+    grid-template-areas:"a a a a a a . . . . . ." "b b b b . . . . . . . ." "c c c c d d d d e e e e"
+    grid-column-gap: 20px
+    &--red,&--yellow,&--purple
+        max-width: 100%
+        max-height: 100%
+    &--red
+        background: red
+        grid-area: a
+    &--yellow
+        background: yellow
+        grid-area: b
+    &--purple
+        background: purple
+        grid-area: c
 
 .intro 
 
